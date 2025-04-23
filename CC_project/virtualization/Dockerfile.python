@@ -1,0 +1,9 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+
+# Copy the function code
+COPY function.py .
+
+# Run the function directly with Python
+CMD ["python", "function.py"]
